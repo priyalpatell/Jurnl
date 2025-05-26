@@ -1,28 +1,21 @@
 <script lang="ts">
-    import '../app.css';
+    import '../styles/style.css';
 </script>
 
-<nav>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/login">Login</a>
-        </li>
-        <li>
-            <a href="/landing">Landing</a>
-        </li>
-        <li>
-            <a href="/journals">Journals</a>
-        </li>
-        <li>
-            <a href="/feed">Friends' Feed</a>
-        </li>
-        <li>
-            <a href="/shared">Shared Journals</a>
-        </li>
-    </ul>
-</nav>
+<nav class="navbar">
+    <div class="navbar__container">
+        <div class="pajamas--hamburger"></div>
+      <div class="navbar__logo">MyLogo</div>
+      <div class="navbar__toggle" id="menu-toggle">&#9776;</div>
+      <div class="navbar__links" id="navbar-links">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/landing">Landing</a>
+        <a href="/journals">Journals</a>
+        <a href="/feed">Friends' Feed</a>
+        <a href="/shared">Shared Journals</a>
+      </div>
+    </div>
+  </nav>
 
 <slot />
